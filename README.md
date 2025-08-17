@@ -1,4 +1,4 @@
-# RAG-Chatbot-for-AI-Engineers
+# RAG Chatbot for AI Engineers
 
 * This is a RAG-based AI Assistant created especially for AI engineers and researchers. It leverages its knowledge from 3 very well-known books, "AI Engineering" by Chip Huyen, "Prompt Engineering" by John Berryman and Albert Ziegler, and "Hands-On Large Language Models" by Alammar and Grootendorst. The language model used in the project was Gemma 3-12B. I used the Ollama platform to fetch the model locally. The model can be easily swapped for any other model.
 
