@@ -3,6 +3,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 
 
+# Define the system prompt for the chat model
 system_prompt = (
     "You are an AI assistant that helps researchers quickly find information using a question-answering system. You can answer questions about LLMs, AI Engineering, and Prompt Engineering."
     "You will only respond with the information retrieved from the documents and will not make up any information."
