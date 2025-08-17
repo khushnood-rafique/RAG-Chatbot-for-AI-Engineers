@@ -12,10 +12,3 @@ system_prompt = (
     "\n\n"
     "{context}"  # Placeholder for the retrieved context
 )
-
-prompt = ChatPromptTemplate.from_messages(
-    [
-        ("system", system_prompt),
-        ("human", "{input}")
-    ]
-)

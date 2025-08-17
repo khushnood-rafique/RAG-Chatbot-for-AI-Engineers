@@ -1,0 +1,151 @@
+/* ===== Theming: modern cool blue / violet with subtle glassmorphism ===== */
+
+body,html{
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #0e1320 0%, #121a2d 35%, #1a253a 100%);
+  color: #e9eef5;
+}
+
+.chat{ margin-top: auto; margin-bottom: auto; }
+.card{
+  height: 80vh;
+  border-radius: 16px !important;
+  background: rgba(19, 26, 42, 0.75) !important;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(123, 144, 171, 0.18) !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+.contacts_body{ padding:0.75rem 0 !important; overflow-y:auto; white-space:nowrap; }
+.msg_card_body{ overflow-y:auto; }
+
+.card-header{
+  border-radius: 16px 16px 0 0 !important;
+  border-bottom: 0 !important;
+  background: linear-gradient(180deg, rgba(38,51,84,0.65), rgba(20,28,46,0.65));
+  border-bottom: 1px solid rgba(123,144,171,0.2) !important;
+}
+.card-footer{
+  border-radius: 0 0 16px 16px !important;
+  border-top: 1px solid rgba(123,144,171,0.2) !important;
+  background: rgba(14, 19, 32, 0.6);
+}
+
+.container{ align-content: center; }
+
+/* Inputs */
+.search, .type_msg{
+  border-radius: 12px !important;
+  background-color: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(123,144,171,0.25) !important;
+  color: #e9eef5 !important;
+}
+.type_msg{
+  height: 56px !important;
+  overflow-y:auto;
+}
+.search:focus, .type_msg:focus{
+  box-shadow: 0 0 0 3px rgba(79,156,255,0.25) !important;
+  outline: 0 !important;
+  border-color: rgba(79,156,255,0.55) !important;
+}
+
+/* Buttons */
+.attach_btn, .send_btn, .search_btn{
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(123,144,171,0.25) !important;
+  color: #e9eef5 !important;
+  cursor: pointer;
+}
+.attach_btn{ border-radius: 12px 0 0 12px !important; }
+.send_btn{ border-radius: 0 12px 12px 0 !important; }
+.search_btn{ border-radius: 0 12px 12px 0 !important; }
+.attach_btn:hover, .send_btn:hover, .search_btn:hover{
+  background: rgba(79,156,255,0.12) !important;
+  border-color: rgba(79,156,255,0.55) !important;
+}
+
+/* Avatars */
+.user_img, .user_img_msg{
+  border:1.5px solid rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.05);
+}
+.user_img{ height:70px; width:70px; }
+.user_img_msg{ height:40px; width:40px; }
+
+.img_cont{ position:relative; height:70px; width:70px; }
+.img_cont_msg{ height:40px; width:40px; }
+
+.online_icon{
+  position:absolute; height:14px; width:14px;
+  background: #22c55e;
+  border-radius:50%; bottom: 0.25em; right: 0.45em;
+  border: 1.5px solid #0e1320;
+}
+
+/* Header text */
+.user_info{ margin: auto 0 auto 15px; }
+.user_info span{ font-size: 20px; color: #e9eef5; font-weight: 700; letter-spacing: 0.2px; }
+.user_info p{ font-size: 12px; color: #a9b6c6; margin-bottom: 0; }
+
+.video_cam{ margin-left: auto; margin-top: 4px; }
+.video_cam span{ color: #a9b6c6; font-size: 18px; cursor: pointer; margin-right: 14px; }
+.video_cam span:hover{ color: #c9d6e5; }
+
+/* Messages */
+.msg_cotainer{
+  margin: auto 0 auto 10px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #2a68ff 0%, #7b5cff 100%);
+  color: #fff;
+  padding: 10px 12px;
+  position: relative;
+  max-width: 80%;
+}
+.msg_cotainer_send{
+  margin: auto 10px auto 0;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #00c2a8, #3dd9b4);
+  color: #0b1320;
+  padding: 10px 12px;
+  position: relative;
+  max-width: 80%;
+}
+
+.msg_time, .msg_time_send{
+  position: absolute;
+  bottom: -15px;
+  font-size: 10px;
+  color: rgba(233,238,245,0.55);
+}
+.msg_time{ left: 0; }
+.msg_time_send{ right: 0; }
+
+/* Top-right action menu */
+.msg_head{ position: relative; }
+#action_menu_btn{ position:absolute; right:10px; top:10px; color:#c9d6e5; cursor:pointer; font-size:18px; }
+.action_menu{
+  z-index: 2;
+  position: absolute; top: 42px; right: 12px;
+  padding: 10px 0;
+  background: rgba(20,28,46,0.95);
+  color: #e9eef5;
+  border: 1px solid rgba(123,144,171,0.25);
+  border-radius: 12px;
+  display: none;
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.action_menu ul{ list-style:none; padding:0; margin:0; }
+.action_menu ul li{ width:100%; padding:10px 14px; margin-bottom:4px; }
+.action_menu ul li i{ padding-right:10px; }
+.action_menu ul li:hover{ cursor:pointer; background: rgba(79,156,255,0.12); }
+
+/* Active contact (if used) */
+.active{ background: rgba(255,255,255,0.06); }
+
+/* Responsive tweaks */
+@media(max-width: 576px){
+  .contacts_card{ margin-bottom: 15px !important; }
+  .card{ height: 80vh; }
+}
