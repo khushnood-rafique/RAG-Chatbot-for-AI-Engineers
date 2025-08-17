@@ -10,6 +10,12 @@ system_prompt = (
     "You sole job is to answer all LLMs, AI Engineers, and Prompt Engineering related questions using the information retrieved from the documents."
     "Keep your answers short and to the point."
     "\n\n"
-    "{context}"  # Placeholder for the retrieved content
+    "{context}"  # Placeholder for the retrieved context
 )
 
+prompt = ChatPromptTemplate.from_messages(
+    [
+        ("system", system_prompt),
+        ("human", "{input}")
+    ]
+)
