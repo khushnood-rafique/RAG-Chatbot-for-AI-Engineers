@@ -6,20 +6,20 @@
 
 * The project runs using Flask on port 8080.
 
-* Vector DB used was Pinecone.
+* Vector DB used was Pinecone. 
 
 * AWS was used for deployment.
 
 ## Requirements:
 
 * The pdfs used in the project have been removed due to copyright issues. You can buy your copies from here:
-** 1) https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/
-** 2) https://www.oreilly.com/library/view/ai-engineering/9781098166298/
-** 3) https://www.oreilly.com/library/view/prompt-engineering-for/9781098156145/
+1) https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/
+2) https://www.oreilly.com/library/view/ai-engineering/9781098166298/
+3) https://www.oreilly.com/library/view/prompt-engineering-for/9781098156145/
 
 * Or find another ways to get them ;)
 
-* Create an account on Pinecone and get an API key for free.
+* Create an account on Pinecone and get an API key for free: https://www.pinecone.io/?utm_term=pinecone%20vector%20database&utm_campaign=brand-eu&utm_source=adwords&utm_medium=ppc&hsa_acc=3111363649&hsa_cam=21023356007&hsa_grp=156209469342&hsa_ad=690982079000&hsa_src=g&hsa_tgt=kwd-1538083228315&hsa_kw=pinecone%20vector%20database&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=21023356007&gbraid=0AAAAABrtGFAHWnQ-SIzOXafa2V0tLQOCz&gclid=Cj0KCQjw-4XFBhCBARIsAAdNOksvn8rtG8gEgiAon4QmWCKhe-CX1piPR0TgE_AxP6D98uYh7waauo4aAquXEALw_wcB
 
 * All libraries are avaiable in "requirements.txt" file.
 
@@ -68,4 +68,4 @@ sudo usermod -aG docker ubuntu
 
 newgrp docker
 
-* Then confiure EC2 as self-hosted runner.
+### Then confiure EC2 as self-hosted runner.
