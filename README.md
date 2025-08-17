@@ -29,6 +29,8 @@
 
 * Useful Ollama commands: 'ollama list', 'ollama ps', 'ollama run [model-name]', 'ollama serve'
 
+* The research.ipynb file can be used for trials.
+
 ## AWS Deployment
 
 * EC2 access is required
